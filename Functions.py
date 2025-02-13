@@ -12,7 +12,7 @@ def write_todos(passed_todos, filepath=FILEPATH):
         file.writelines(passed_todos)
 
 
-def done_todos(completed, filepath = "/Users/Bryan/PythonProject/MyOwnTodoApp/completed_todos.txt"):
+def done_todos(completed, filepath = "completed_todos.txt"):
     timestamp = datetime.now().strftime("%m-%d-%Y %H:%M")
     entry = f"{completed.strip()} - Completed on {timestamp}\n"
     with open(filepath, 'a') as file:
